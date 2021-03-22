@@ -45,12 +45,7 @@ public class Graph implements Visitor {
 
     public void print(){
         EndpointPair<String> x =graph.incidentNodes("Dating");
-        EndpointPair<String> a =graph.incidentNodes("Friends");
-        EndpointPair<String> b =graph.incidentNodes("Enemies");
-        EndpointPair<String> d =graph.incidentNodes("classmates");
         Set<String> y = graph.incidentEdges("Daniel");
-        Set<String> friend = graph.incidentEdges("James");
-        Set<String> enemy = graph.incidentEdges("Samuel");
         System.out.println(x.nodeU()+ "------------" +y+"-------->"+ x.nodeV());
 
     }
