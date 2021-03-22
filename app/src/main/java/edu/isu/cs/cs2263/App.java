@@ -4,11 +4,11 @@
 package edu.isu.cs.cs2263;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
-}
+        Graph graph = new Graph();
+        graph.print();
+        graph.summary();
+
+}}
